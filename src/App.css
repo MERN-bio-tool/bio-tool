@@ -1,0 +1,177 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  border-bottom: 2px solid #007bff;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.measurement-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.measurement-container > div {
+  margin: 0 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type='number'] {
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type='number']:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li::before {
+  content: '•';
+  color: #007bff;
+  margin-right: 5px;
+}
+
+/* Additional Styles */
+.record {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.record-info {
+  flex: 1;
+}
+
+.record-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.error-message {
+  color: #ff0000;
+  margin-top: 5px;
+}
+
+.success-message {
+  color: #00ff00;
+  margin-top: 5px;
+}
+/* CreateMeasurement.css */
+
+.create-measurement {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.create-measurement h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #555;
+}
+
+.input-group input[type='number'] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.input-group input[type='number']:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.error-message {
+  color: #ff0000;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+button[type='submit'] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button[type='submit']:hover {
+  background-color: #0056b3;
+}
